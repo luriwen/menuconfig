@@ -1,0 +1,59 @@
+#menu "Kylin performance test"
+
+config KYLINPERFORMANCE
+	tristate "Kylin performance test"
+	default y
+	---help---
+		Kylin performance test.
+
+if KYLINPERFORMANCE
+config UDISK
+	tristate "U disk test"
+	default n
+	help
+		The U disk cp test.
+
+config UNIXBENCH
+	tristate "Unixbench test"
+	default n
+	help
+		The unixbench test.
+
+config STREAM
+	tristate "Stream test"
+	default n
+	help
+		The stream test.
+
+config IOZONE
+	tristate "Iozone test"
+	default n
+	help
+		The iozone test.
+
+config LMBENCH
+	tristate "Lmbench test"
+	default n
+	help
+		The lmbench test.
+
+config IPERF
+	tristate "Iperf test"
+	default n
+	help
+		The iperf test.
+
+config SPECJVM
+	tristate "Specjvm test"
+	default n
+	help
+		The specjvm test.
+
+config TTYTEST
+	tristate "TTY test"
+	default n
+	help
+		The tty test
+endif
+#endmenu
+
